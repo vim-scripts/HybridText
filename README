@@ -1,0 +1,46 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=4188
+
+Plain text files do not have a syntax, but we use different kinds of syntax in text files. So that you can easily swing from making GTD-style todo lists to writing documents in Markdown, without using dozens of pseudo filetypes, the HybridText syntax file attempts to merge elements of several common, helpful markup schemes: Markdown, Markdown extensions, Pandoc, reStructuredText, Mind Maps, and TaskPaper.
+
+Optional ColorBoost extends existing colorschemes, in order to support advanced effects.
+
+The following sample is an exhaustive look at everything HybridText does, but all you really need is to know is how to use your chosen markup. Follow the install details at the bottom of this page to test, and to automatically load the syntax.
+
+Version 1.2 sample, rendered: http://antelucan.com/vimupdate/f/HybridTextSyntax-1-2.html
+In colorscheme FluidVision: http://antelucan.com/vimupdate/f/HybridTextSyntax-1-2.fluidvision.html
+In colorscheme Spectro: http://antelucan.com/vimupdate/f/HybridTextSyntax-1-2.spectro.html
+
+Plain text file: http://antelucan.com/vimupdate/f/HybridTextSyntax-1-2.txt
+
+Mind Maps may be converted at Text 2 Mind Map (http://www.text2mindmap.com): note that only *ten* levels are supported, and pasted text must use tabs instead of spaces.
+
+Mind Map results from text2mindmap.com: http://antelucan.com/vimupdate/f/NonsenseMindMap.png
+Mind Map highlighted by HybridText: http://antelucan.com/vimupdate/f/NonsenseMindMap.html
+
+----------------------------------------------------------------------------------------------------------------------------
+
+Update history:
+
+Version 1.2 fixes a major top-level goof (I was configuring so much stuff at the bottom, I accidentally switched off text emphasis at the top!) Apart from that, there's more support for Markdown and reStructuredText, extended support for block quotes, and various adjustments and fixes. I feel there's more to do, but I need a breather.
+
+The support file (linked above) has been re-organized into better groupings, in order to demonstrate/check the highlighting. Instead of going all through Markdown, and then reStructuredText, like things are put together--for example, the two markups use a slightly different method of indicating line breaks/blocks of lines, so it's useful to put them together in order to make sure the highlighting is consistent between different kinds of documents.
+
+Version 1.1 introduces Mind Mapping--12 levels of gradient indentations for brainstorming.
+
+Version 1.1 also now includes ColorBoost, an optional enhancement for existing colorschemes. ColorBoost defines header levels, creates gradiated effects, and allows text emphasis within other definitions. This is a cheat to make HybridText compatible with other schemes, and can be turned off with a line in VIMRC.
+
+Changing colorschemes with a file open will clear ColorBoost colors until the buffer is reloaded. Type command :e to restore.
+
+
+The following pages are examples using different colorschemes in version 1.1, in order to demonstrate ColorBoost.
+
+Sample, Festoon Light: http://antelucan.com/vimupdate/f/hybrid-txt-festoon-light.html
+Sample, Festoon Dark: http://antelucan.com/vimupdate/f/hybrid-txt-festoon-dark.html
+Sample, Solarized Dark with ColorBoost: http://antelucan.com/vimupdate/f/hybrid-txt-solarized-dark.html
+Sample, Twilight with ColorBoost: http://antelucan.com/vimupdate/f/hybrid-txt-twilight.html
+Sample, CalmBreeze with ColorBoost: http://antelucan.com/vimupdate/f/hybrid-txt-calmbreeze.html
+
+Sample, Tabula without ColorBoost: http://antelucan.com/vimupdate/f/hybrid-txt-tabula.html
+
+Version 1.0: [Fixed in 1.1] For best results (but not required), use the colorscheme Festoon vimscript #3852. Text emphasis within other defined blocks require extra definitions, and many colorschemes fail to support header levels. Nested blockquotes use a gradiated colorscheme especially written for Festoon.
+
